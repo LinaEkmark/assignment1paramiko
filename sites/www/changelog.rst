@@ -1,6 +1,9 @@
 =========
 Changelog
 =========
+- :bug:`2258` auth_handler: properly check that public_blob attr exists
+  Fix an issue where an error `AttributeError: public_blob` is raised when
+  a complex connection chain is used.
 
 - :release:`3.5.0 <2024-09-15>`
 - :feature:`982` (via :issue:`2444`, which was a rebase of :issue:`2157`) Add
