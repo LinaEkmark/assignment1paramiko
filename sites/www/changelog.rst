@@ -2,6 +2,10 @@
 Changelog
 =========
 
+- :feature:`1535` It is now possible to send signals to the processes started via
+  `SSHClient.exec_command <paramiko.client.SSHClient.exec_command>` or
+  `SSHClient.invoke_shell <paramiko.client.SSHClient.invoke_shell>` using the
+  new `Channel.send_signal <paramiko.channel.Channel.send_signal>` method.
 - :release:`3.5.0 <2024-09-15>`
 - :feature:`982` (via :issue:`2444`, which was a rebase of :issue:`2157`) Add
   support for AES-GCM encryption ciphers (128 and 256 bit variants). Thanks to
